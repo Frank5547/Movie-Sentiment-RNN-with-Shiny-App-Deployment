@@ -1,0 +1,10 @@
+name: movie_sentiment_rnn_with_shiny_app_deployment
+title:
+username:
+account: thalamus
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 993409
+bundleId: 2171288
+url: https://thalamus.shinyapps.io/movie_sentiment_rnn_with_shiny_app_deployment/
+when: 1561228287.71876
