@@ -1,11 +1,7 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+###################################
+# Main Shiny App Code
+# Author: Francisco Javier Carrera Arias
+###################################
 library(shiny)
 library(shinythemes)
 source("get_prediction_from_LSTM.R")
@@ -28,7 +24,7 @@ ui <- fluidPage(theme = shinytheme("superhero"),
   )
 )
 
-# Define server logic required to draw a histogram
+# Define server logic
 server <- function(input, output) {
   
    pred <- eventReactive(input$button,{
