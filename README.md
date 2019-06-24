@@ -2,6 +2,7 @@
 Background Code behind my deployed R Shiny app located at http://thalamus.shinyapps.io/movie_sentiment_rnn_with_shiny_app_deployment containing an LSTM model capable of predicting the sentiment of movie reviews. An example of how this app works can be seen below:
 
 ![Negative Review](Shiny_App_Example_1.png)
+![Positive Review](Shiny_App_Example_2.png)
 
 The first folder above represents the orginal code that I used to build and test the app locally in my computer. This includes the training of the LSTM model and the testing with a separate test set that yielded an 88% test accuracy.
 
