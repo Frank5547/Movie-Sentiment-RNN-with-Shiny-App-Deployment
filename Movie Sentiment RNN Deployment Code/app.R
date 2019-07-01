@@ -1,11 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
 library(shiny)
 library(shinythemes)
 library(shinyjs)
@@ -36,12 +28,9 @@ ui <- fluidPage(theme = shinytheme("superhero"),
   )
 )
 
-# Define server logic required to draw a histogram
 server <- function(input, output) {
   
    pred <- eventReactive(input$button,{
-      # Add the draw button as a dependency to
-      # cause the word cloud to re-render on click
         prediction <- get_prediction_from_LSTM(input$review)
         if(prediction == 0){
           tags$div(
