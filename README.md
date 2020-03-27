@@ -4,7 +4,7 @@ Background Code behind my deployed R Shiny app located at https://thalamus.shiny
 ![Negative Review](Shiny_App_Example_1.png)
 ![Positive Review](Shiny_App_Example_2.png)
 
-The first folder contains the code which I used to actually deploy the R Shiny app in www.shinyapps.io. It contains some slight modifications from the original code that were needed for the Shiny app to work inside shinyapps.io. For instance,the vocabulary_to_int.pkl got renamed to vocabulary_to_int_py_2.pkl since I needed to use protocol 2 instead of 3 inside pickle.dump(). This was due to the fact that Python 2.7 was picked as the default inside shinyapps.io.
+The first folder contains the code which I used to actually deploy the R Shiny app in www.shinyapps.io. To obtain the best-performing sentiment model that goes along this code in the R Shiny app see: https://drive.google.com/open?id=1g4zOfEiGDUGWJm4mUz5V0xGl8WlF_BV2
 
 The second folder above represents the orginal code that I used to build and test the app locally in my computer. This includes the training of the LSTM model and the testing with a separate test set that yielded an 88% test accuracy. If you want to run this app locally, I suggest that you use the files in this folder and then obtain the "Sentiment_Best_Model.pt" file from this link https://drive.google.com/open?id=1g4zOfEiGDUGWJm4mUz5V0xGl8WlF_BV2. After that, just run "Movie_Review_Sentiment_Predictions_App.R" inside RStudio and you should be good to go!
 
