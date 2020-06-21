@@ -4,7 +4,7 @@ library(shinyjs)
 library(reticulate)
 virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_remove(envname = "python_environment", packages = "pip")
-virtualenv_install(envname = "python_environment", packages = c("pip==19.0.3","numpy","nltk","torch"), ignore_installed = TRUE)
+virtualenv_install(envname = "python_environment", packages = c("pip==19.0.3","numpy==1.16.2","nltk","torch"), ignore_installed = TRUE)
 reticulate::use_virtualenv("python_environment", required = TRUE)
 source("get_prediction_from_LSTM.R")
 
