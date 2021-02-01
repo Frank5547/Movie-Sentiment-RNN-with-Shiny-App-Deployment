@@ -1,5 +1,5 @@
 # Movie-Sentiment-RNN-with-Shiny-App-Deployment
-Background Code behind my deployed R Shiny app located at https://thalamus.shinyapps.io/movie_sentiment_rnn_deployment_code/ containing an LSTM model capable of predicting the sentiment of movie reviews. A couple examples of how this app works can be seen below:
+Background Code behind my deployed R Shiny app located at https://thalamus.shinyapps.io/Movie_Sentiment_Detector/ containing an LSTM model capable of predicting the sentiment of movie reviews. A couple examples of how this app works can be seen below:
 
 ![Negative Review](Shiny_App_Example_1.png)
 ![Positive Review](Shiny_App_Example_2.png)
